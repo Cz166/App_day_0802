@@ -1,0 +1,12 @@
+[
+  "test_use_case/test_use_case_register.py::Test_Case::()::test_register_quit",
+  "test_use_case/test_use_case_register.py::Test_Case::()::test_register",
+  "test_use_case/test_use_case_register.py::Test_Case::()::test_my_indent",
+  "test_use_case/test_use_case_register.py::Test_Case::()::test_I_issue",
+  "test_use_case/test_use_case_register.py::Test_Case::()::test_my_collect",
+  "test_use_case/test_use_case_register.py::Test_Case::()::test_my_attention",
+  "test_use_case/test_use_case_register.py::Test_Case::()::test_my_news",
+  "test_use_case/test_use_case_register.py::Test_Case::()::test_my_red_packet",
+  "test_use_case/test_use_case_register.py::Test_Case::()::test_privacy_set",
+  "test_use_case/test_use_case_register.py::Test_Case::()::test_release_update"
+]
