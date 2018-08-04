@@ -14,6 +14,7 @@ class Test_Case:
         self.Dv.driver.quit()
     """测试用例_001_无前置条件_初始化App正确帐号登录，退出"""
     @pytest.mark.run(order=1)
+    @allure.step(title='测试用例_001_无前置条件_初始化App正确帐号登录，退出')
     def test_register_quit(self):
         self.Dv.succeed_register()
         # 向上滑动屏幕

@@ -1,5 +1,5 @@
 from selenium.webdriver.support.wait import WebDriverWait
-
+import allure
 class Base:
     # 初始化driver
     def __init__(self,driver):
