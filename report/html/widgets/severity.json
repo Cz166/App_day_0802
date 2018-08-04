@@ -1,0 +1,11 @@
+[ {
+  "uid" : "bc074837f64d604f",
+  "name" : "Test_Case.test_register_quit",
+  "time" : {
+    "start" : 1533230968545,
+    "stop" : 1533231051272,
+    "duration" : 82727
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
