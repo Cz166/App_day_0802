@@ -1,0 +1,25 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1533366407006" stop="1533366407006">
+  <description>This is the tests collection phase. Failures are modules that failed to collect.</description>
+  <name>test_collection_phase</name>
+  <title>Collection phase</title>
+  <labels/>
+  <test-cases>
+    <test-case start="1533366407006" status="broken" stop="1533366407006">
+      <name>test_use_case_register</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>c:\users\联想\appdata\local\programs\python\python36-32\lib\site-packages\_pytest\python.py:469: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+c:\users\联想\appdata\local\programs\python\python36-32\lib\site-packages\py\_path\local.py:668: in pyimport
+    __import__(modname)
+E     File "E:\PyCharm 2017.3.4\App_day_0802\test_use_case\test_use_case_register.py", line 20
+E       self.Dv.succeed_register()
+E          ^
+E   SyntaxError: invalid syntax</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
