@@ -12,8 +12,8 @@ class Test_Case:
     # 关闭App
     def teardown_class(self):
         self.Dv.driver.quit()
+    """测试用例_001_无前置条件_初始化App正确帐号登录，退出"""
     @pytest.mark.run(order=1)
-    @allure.step(title='测试用例_001_无前置条件_初始化App正确帐号登录，退出')
     def test_register_quit(self):
         self.Dv.succeed_register()
         # 向上滑动屏幕
@@ -30,8 +30,8 @@ class Test_Case:
                 assert False
         finally:
             self.Dv.screenshot()
+    """测试用例_002_前置条件(已初始化App并在我的页面)_正确帐号登录"""
     @pytest.mark.run(order=2)
-    @allure.step(title='测试用例_002_前置条件(已初始化App并在我的页面)_正确帐号登录')
     def test_register(self):
         self.Dv.below_slide()
         if '马上登录' in self.Dv.gain_a_group_text(Page.my_list):
@@ -50,15 +50,15 @@ class Test_Case:
                     assert False
             finally:
                 self.Dv.screenshot()
+    """测试用例_003_前置条件(已初始化App并在我的页面)_我的订单正确性验证"""
     @pytest.mark.run(order=3)
-    @allure.step(title='测试用例_003_前置条件(已初始化App并在我的页面)_我的订单正确性验证')
     def test_my_indent(self):
         # 点击我的订单按钮
         self.Dv.click_my_indent()
         # 点击返回按钮
         self.Dv.click_return_button()
+    """测试用例_004_前置条件(已初始化App并在我的页面)_我发布的正确性验证"""
     @pytest.mark.run(order=4)
-    @allure.step(title='测试用例_004_前置条件(已初始化App并在我的页面)_我发布的正确性验证')
     def test_I_issue(self):
         # 点击我发布的按钮
         self.Dv.click_I_issue()
@@ -66,15 +66,15 @@ class Test_Case:
         self.Dv.click_official_recycle()
         # 点击返回按钮
         self.Dv.click_return_button()
+    """测试用例_005_前置条件(已初始化App并在我的页面)_我的收藏正确性验证"""
     @pytest.mark.run(order=5)
-    @allure.step(title='测试用例_005_前置条件(已初始化App并在我的页面)_我的收藏正确性验证')
     def test_my_collect(self):
         # 点击我的收藏
         self.Dv.click_my_collect()
         # 点击返回按钮
         self.Dv.click_return_button()
+    """测试用例_006_前置条件(已初始化App并在我的页面)_我的关注正确性验证"""
     @pytest.mark.run(order=6)
-    @allure.step(title='测试用例_006_前置条件(已初始化App并在我的页面)_我的关注正确性验证')
     def test_my_attention(self):
         # 点击我的关注按钮
         self.Dv.click_my_attention()
@@ -82,8 +82,8 @@ class Test_Case:
         self.Dv.click_fans()
         # 点击返回按钮
         self.Dv.click_return_button()
+    """测试用例_007_前置条件(已初始化App并在我的页面)_我的消息正确性验证"""
     @pytest.mark.run(order=7)
-    @allure.step(title='测试用例_007_前置条件(已初始化App并在我的页面)_我的消息正确性验证')
     def test_my_news(self):
         # 点击我的消息按钮
         self.Dv.click_news()
@@ -96,15 +96,15 @@ class Test_Case:
         for i in range(2):
             # 点击返回按钮
             self.Dv.click_return_button()
+    """测试用例_008_前置条件(已初始化App并在我的页面)_我的红包正确性验证"""
     @pytest.mark.run(order=8)
-    @allure.step(title='测试用例_009_前置条件(已初始化App并在我的页面)_我的红包正确性验证')
     def test_my_red_packet(self):
         # 点击我的红包按钮
         self.Dv.click_my_red_packet()
         # 点击返回按钮
         self.Dv.click_return_button()
+    """测试用例_009_前置条件(已初始化App并在我的页面)_隐私设置正确性验证"""
     @pytest.mark.run(order=9)
-    @allure.step(title='测试用例_009_前置条件(已初始化App并在我的页面)_隐私设置正确性验证')
     def test_privacy_set(self):
         # 点击隐私设置
         self.Dv.click_privacy_set()
@@ -112,8 +112,8 @@ class Test_Case:
         self.Dv.click_phone_privacy()
         # 点击返回按钮
         self.Dv.click_return_button()
+    """测试用例_010_前置条件(已初始化App并在我的页面)_上滑屏幕_版本更新正确性验证"""
     @pytest.mark.run(order=10)
-    @allure.step(title='测试用例_010_前置条件(已初始化App并在我的页面)_上滑屏幕_版本更新正确性验证')
     def test_release_update(self):
         # 向上滑动屏幕
         self.Dv.up_slide()
